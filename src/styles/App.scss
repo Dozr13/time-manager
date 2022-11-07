@@ -1,0 +1,82 @@
+@import './defaults';
+
+.App {
+  height: 100vh;
+  text-align: center;
+}
+
+.site-name {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #950695;
+  text-decoration: underline;
+  margin: 0 2rem 1rem 0;
+  display: inline-block;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.header {
+  height: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $dark-gray;
+  border-bottom: .3rem solid #FFF;
+}
+
+.header-items{
+  height: 90%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  list-style-type: none;
+  font-size: 2rem;
+  color: $light-gray;
+}
+
+.page-name {
+  font-size: 3rem;
+  font-weight: 700;
+
+}
+
+
+
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

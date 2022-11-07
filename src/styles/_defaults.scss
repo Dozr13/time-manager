@@ -1,0 +1,36 @@
+// *******************
+// ! Color Variables !
+// *******************
+
+// * Standard Colors
+$white: #FFF;
+$black: #000;
+$light-gray: #aaaaaa;
+$dark-gray: #252525;
+$red: #fe0122;
+$orange: #ff5100;
+$pop: #8ac08a;
+$green: #0fb80f;
+$blue: #042649;
+$light-blue: #376ea5;
+$off-white: #d1cfcf;
+
+a {
+  text-decoration: none;
+  color: $light-gray;
+}
+
+a:hover {
+  color: $green;
+}
+
+ul, ol {
+  text-align: left;
+
+  & & {
+    padding: {
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
