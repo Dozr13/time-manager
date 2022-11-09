@@ -2,7 +2,20 @@
   "name": "time-manager",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "8.7.0",
+    "node": "17.9.0"
+  },
   "dependencies": {
+    "@devexpress/dx-react-core": "^3.0.6",
+    "@devexpress/dx-react-scheduler": "^3.0.6",
+    "@devexpress/dx-react-scheduler-material-ui": "^3.0.6",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fontsource/roboto": "^4.5.8",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.13",
+    "@mui/styled-engine-sc": "^5.10.6",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,6 +23,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "sass": "^1.56.0",
+    "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

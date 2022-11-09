@@ -1,4 +1,4 @@
-import { render } from "react-dom"
+import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import App from "./App"
@@ -10,8 +10,8 @@ import TimePage from "./pages/TimePage"
 
 import "./styles/index.scss"
 
-const rootElement = document.getElementById("root")
-render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
     <BrowserRouter>
         <Routes>
             <Route path='/' element={<App />}>
@@ -31,6 +31,5 @@ render(
                 <Route path='*' element={<ErrorPage />} />
             </Route>
         </Routes>
-    </BrowserRouter>,
-    rootElement
+    </BrowserRouter>
 )
