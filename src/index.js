@@ -6,7 +6,8 @@ import ErrorPage from "./pages/ErrorPage.js"
 import HomePage from "./pages/HomePage.js"
 import TasksPage from "./pages/TasksPage"
 import SingleTask from "./pages/SingleTask"
-import TimePage from "./pages/TimePage"
+import Schedule from './pages/Schedule'
+// import TimePage from "./pages/TimePage"
 
 import "./styles/index.scss"
 
@@ -27,7 +28,7 @@ root.render(
                     />
                     <Route path=':taskId' element={<SingleTask />} />
                 </Route>
-                <Route path='/time' element={<TimePage />} />
+                <Route path='/schedule' element={<Schedule />} />
                 <Route path='*' element={<ErrorPage />} />
             </Route>
         </Routes>

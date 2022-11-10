@@ -1,3 +1,5 @@
+import 'devextreme/dist/css/dx.common.css';
+import 'devextreme/dist/css/dx.light.css';
 import "./styles/App.scss"
 import "./styles/Reset.scss"
 import { Outlet } from "react-router-dom"
