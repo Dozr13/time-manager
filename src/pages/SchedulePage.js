@@ -1,6 +1,11 @@
 import { useCallback, useState } from "react"
 import { Scheduler, View, Editing, Resource } from "devextreme-react/scheduler"
-import { mockPriorityData, mockScheduleData } from "../mocks/mockScheduleData"
+import { mockScheduleData } from "../mocks/mockScheduleData"
+import TasksPage from '../components/TasksPage'
+
+// import 'devextreme/dist/css/dx.light.css';
+
+//* diff
 
 // const views = [
 //     "timelineDay",
@@ -23,14 +28,16 @@ const Schedule = () => {
     // TODO Double check time
 
     return (
+      <>
         <Scheduler
             defaultCurrentView='month'
-            height={"85vh"}
+            height={"70vh"}
             id='scheduler'
             adaptivityEnabled={true}
             dataSource={mockScheduleData}
             textExpr='title'
             allDayExpr='dayLong'
+            shadeUntilCurrentTime={true}
             recurrenceRuleExpr='recurrence'
             currentDate={currentDate}
             showCurrentTimeIndicator={true}
@@ -42,6 +49,8 @@ const Schedule = () => {
             <View type='month' />
             <Editing allowDragging={true} />
         </Scheduler>
+        <TasksPage />
+      </>
     )
 }
 

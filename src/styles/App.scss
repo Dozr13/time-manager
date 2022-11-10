@@ -3,27 +3,27 @@
 .App {
   height: 100vh;
   text-align: center;
-  // overflow: hidden;
+  overflow: hidden;
 }
 
 .site-name {
-  font-size: 3.8rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #950695;
   text-decoration: underline;
-  margin: 0 2rem 1rem 0;
+  margin: 1rem 3rem 1rem 0;
   display: inline-block;
   align-self: center;
   justify-self: flex-end;
 }
 
 .header {
-  height: 5em;
+  height: 8vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: $dark-gray;
-  border-bottom: .3rem solid #FFF;
+  border-bottom: .01rem double #FFF;
 }
 
 .header-items{
@@ -38,10 +38,55 @@
   color: $light-gray;
 }
 
-.page-name {
-  font-size: 3rem;
-  font-weight: 700;
+.flex-container {
+  height: 23.9vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  overflow: scroll;
 
+}
+
+.flex-container::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.1);;
+  background-color: transparentize($color: #40404a, $amount: 0);
+  border-radius: 10px;
+}
+
+.flex-container::-webkit-scrollbar
+{
+  width: 10px;
+  background-color: transparentize($color: #40404a, $amount: 0);
+}
+
+.flex-container::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: transparentize($color: #40404a, $amount: 0);
+  background-image: -webkit-gradient(linear,
+                     40% 0%,
+                     75% 84%,
+                     from(#00695f),
+                     to(#00695f),
+                     color-stop(.6,#54DE5D))
+}
+
+.single-task {
+  height: 3em;
+  // width: 7em;
+  border: 1em solid #00695f;
+  border-radius: 50px;
+  background-color: #00695f;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.todays-tasks {
+  margin: 0 1rem;
+  text-decoration: underline;
 }
 
 

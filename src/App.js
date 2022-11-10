@@ -5,6 +5,9 @@ import "./styles/Reset.scss"
 import { Outlet } from "react-router-dom"
 import Header from "./components/Header"
 
+import 'devextreme/dist/css/dx.material.teal.dark.compact.css';
+
+
 function App() {
     return (
         <div className='App'>

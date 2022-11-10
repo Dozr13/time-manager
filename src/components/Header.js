@@ -9,7 +9,7 @@ function Header() {
         <li><Link to='/tasks'>Tasks</Link></li>
         <li><Link to='/schedule'>Schedule</Link></li>
       </ul>
-      <h1 className='site-name'>Daily Task Manager</h1>
+      <p className='site-name'>Daily Task Manager</p>
     </div>
   )
 }

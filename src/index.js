@@ -4,9 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import App from "./App"
 import ErrorPage from "./pages/ErrorPage.js"
 import HomePage from "./pages/HomePage.js"
-import TasksPage from "./pages/TasksPage"
+import TasksPage from "./components/TasksPage"
 import SingleTask from "./pages/SingleTask"
-import Schedule from './pages/Schedule'
+import SchedulePage from './pages/SchedulePage'
 // import TimePage from "./pages/TimePage"
 
 import "./styles/index.scss"
@@ -28,7 +28,7 @@ root.render(
                     />
                     <Route path=':taskId' element={<SingleTask />} />
                 </Route>
-                <Route path='/schedule' element={<Schedule />} />
+                <Route path='/schedule' element={<SchedulePage />} />
                 <Route path='*' element={<ErrorPage />} />
             </Route>
         </Routes>
